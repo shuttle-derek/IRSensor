@@ -4,29 +4,22 @@
 
 void opa_adc(void)					//read opda0o
 {
-	unsigned int	adc_buf;
-	unsigned char	a,buf0;
+	unsigned int	buf;
 	initial_adc();
 	_sadc1=0b10000000;
 	_adcen=1;
 	adc_16bit=0;
-	
-	for(a=0;a<=3;a++)
-	{
-		_start =0;
-		_start =1;
-		_start =0;
-		while(_adbz==1)
+// A/D converter start
+	_start =0;
+	_start =1;
+	_start =0;
+
+	while(_adbz==1) // Wait A/D converter ready
 		GCC_CLRWDT();
-		
-		adc_buf=_sadoh;
-		buf0=_sadol;
-		adc_buf=((adc_buf<<4)+(buf0>>4));
-		if((a==1)||(a==2)||(a==3))
-		{	
-			adc_16bit+=adc_buf;
-		}
-	}
+	buf=_sadoh;
+	adc_16bit = (buf<<4) + (_sadol>>4) ;
+
+
 	_sadc0=0;		//Non-existed channel and disable adc function
 	_sadc1=0;
 	_sadc2=0;

@@ -4,8 +4,12 @@
 
 bit_type Flag1;
 
-unsigned int	adc_16bit,Status[10],Status_Max,Status_Min;
-unsigned char	Uart_L,Uart_H,M_1sec,i;
+//unsigned int	adc_16bit,Status[10],Status_Max,Status_Min;
+//unsigned char	Uart_L,Uart_H,M_1sec,i;
+unsigned long int adc_32bit;
+unsigned char UART_31, UART_23, UART_15, UART_7, under_threshold_count, i;
+unsigned int adc_16bit, previous_adc, adc_count;
+unsigned int myCounter;
 ///////////////////////////////////////////////////////////interrupt
 //void __attribute((interrupt(0x10))) stm_p (void)
 //{
@@ -19,24 +23,37 @@ unsigned char	Uart_L,Uart_H,M_1sec,i;
 ///////////////////////////////////////////////////////////
 void uart_sent(void)
 {
-	adc_16bit=(adc_16bit>>2);
-	Uart_H=(adc_16bit>>8);
-	Uart_L=(adc_16bit&0xff);
+	unsigned long adc32;
+
+	adc32 	= adc_32bit;
+    UART_31	=(adc32>>24);
+	UART_23	=(adc32>>16);
+	UART_15	=(adc32>>8);
+	UART_7	=adc32;
+	
 	_utxen=1;
 	
-	_utxr_rxr=Uart_H;
+	_utxr_rxr=UART_31;
 	while(!_utidle)
 	GCC_CLRWDT();
 	
-	_utxr_rxr=Uart_L;
+	_utxr_rxr=UART_23;
 	while(!_utidle)
 	GCC_CLRWDT();
 	
-	_utxr_rxr=0x0d;
+	_utxr_rxr=UART_15;
 	while(!_utidle)
 	GCC_CLRWDT();
 	
-	_utxr_rxr=0x0a;
+	_utxr_rxr=UART_7;
+	while(!_utidle)
+	GCC_CLRWDT();
+	
+	_utxr_rxr=adc_count>>8;
+	while(!_utidle)
+	GCC_CLRWDT();
+
+	_utxr_rxr=adc_count&0xff;
 	while(!_utidle)
 	GCC_CLRWDT();
 }
@@ -62,42 +79,54 @@ void main()
 	{	
 		GCC_CLRWDT();
 		
+		if(myCounter>=70)
+		{
+			
 		rx_control=1;
 		_isgen=1;					//isink output
-		GCC_DELAY(isink_delay);
-		opa_adc();
-		_isgen=0;
+		previous_adc=0; // pre adc value
+		adc_32bit=0;
 /*		rx_control=0;*/
-		Status[i]=adc_16bit;
-		if(i<9)
+		// Status[0] : count increse curve times , 
+		while(adc_count < adc_duration)
 		{
-			i++;
-		}
-		else
-		{
-			i=0;
-		}
-//		uart_sent();
-		if(M_1sec>=62)
-		{
-			M_1sec=0;
-			Status_Max=0x00;
-			Status_Min=0xffff;
-			for(i=0;i<10;i++)
-			{
-				if(Status[i]>Status_Max)
-					Status_Max=Status[i];
-				if(Status[i]<Status_Min)
-					Status_Min=Status[i];
-				adc_16bit+=Status[i];
+			opa_adc();
+//			uart_sent();
+			if (adc_16bit > active_threshold) {
+				under_threshold_count=0;
+				if (adc_count==0) {
+					previous_adc=adc_16bit;
+					adc_32bit=adc_16bit;
+//					adc_count++;
+//					continue;
+				}
+				else {
+					adc_32bit +=adc_16bit;
+					previous_adc = adc_16bit;
+				}		
 			}
-			adc_16bit-=(Status_Max+Status_Min);
-			adc_16bit>>=3;
-			uart_sent();
+			else {
+				if (adc_16bit < previous_adc) {
+					if (++under_threshold_count > 5) // continue lower then the adc threshold
+						break;
+				}			
+			}
+			adc_count++;
+		}
+//		adc_32bit >>=4;
+		_isgen=0;
+		uart_sent();
+		adc_count=0;
+		
+			
+			myCounter = 0;
 		}
 		else
-			M_1sec++;
-			
+		{
+			myCounter++;
+		}
+
+
 		if(halt_sleep)				//halt function(sleep)
 		{
 			halt_set();
