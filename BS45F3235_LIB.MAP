@@ -12,145 +12,151 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      Bank    Start     End      Length     Class    AvgIns    Name
      00h     0000h     0000h    0001h      CODE               @code (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
      00h     0001h     0001h    0001h      CODE               @start (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0002h     007bh    007ah      CODE               _uart_sent (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     007ch     00f1h    0076h      CODE               _main (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     00f2h     010ah    0019h      CODE               _initial_opa (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     010bh     010fh    0005h      CODE               _initial_adc (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0110h     0115h    0006h      CODE               _halt_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0116h     0118h    0003h      CODE               _wake_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0119h     0123h    000bh      CODE               _clear_ram (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0124h     01b6h    0093h      CODE               _opa_offset (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     01b7h     01e4h    002eh      CODE               _initial (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     01e5h     0206h    0022h      CODE               _opa_adc (D:\Downloads\ShuttleByDerek\FUNCTION.OBJ)
-     00h     0207h     0210h    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0211h     021eh    000eh      CODE               _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0040h     0052h    0013h      DATA     2.6842    @HCCINIT0 (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0053h     0053h    0001h      DATA     34        @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0054h     0054h    0001h      DATA     41        @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0055h     0055h    0001h      DATA     29        @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0056h     0056h    0001h      DATA     14        @data_rd (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0057h     0057h    0001h      DATA     8         @data_re (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0058h     0058h    0001h      DATA     4         @data_rf (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0059h     0059h    0001h      DATA     4         @data_rg (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     005ah     005ah    0001h      DATA     4         @data_rh (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0002h     008dh    008ch      CODE               _uart_sent (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     008eh     0120h    0093h      CODE               _main (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0121h     0139h    0019h      CODE               _initial_opa (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     013ah     013eh    0005h      CODE               _initial_adc (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     013fh     0144h    0006h      CODE               _halt_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0145h     0147h    0003h      CODE               _wake_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0148h     0152h    000bh      CODE               _clear_ram (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0153h     01e5h    0093h      CODE               _opa_offset (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     01e6h     0213h    002eh      CODE               _initial (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0214h     0235h    0022h      CODE               _opa_adc (D:\Downloads\ShuttleByDerek\FUNCTION.OBJ)
+     00h     0236h     023fh    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0240h     024dh    000eh      CODE               _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0040h     0058h    0019h      DATA     2.8       @HCCINIT0 (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0059h     0059h    0001h      DATA     34        @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     005ah     005ah    0001h      DATA     43        @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     005bh     005bh    0001h      DATA     31        @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     005ch     005ch    0001h      DATA     17        @data_rd (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     005dh     005dh    0001h      DATA     11        @data_re (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     005eh     005eh    0001h      DATA     4         @data_rf (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     005fh     005fh    0001h      DATA     4         @data_rg (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0060h     0060h    0001h      DATA     4         @data_rh (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
 
      Local Sections
 
      Bank    Start     End      Length     Class    AvgIns    Name
-     00h     0067h     0067h    0000h      LOCAL    0         @dummy (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0067h     0067h    0000h      LOCAL    0         _main (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     005bh     005bh    0000h      LOCAL    0         __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     005bh     005bh    0001h      LOCAL    2         _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     005bh     005bh    0000h      LOCAL    0         _clear_ram (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     005bh     005bh    0000h      LOCAL    0         _initial (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     005bh     005bh    0000h      LOCAL    0         _opa_offset (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     005bh     005bh    0000h      LOCAL    0         _initial_opa (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     005bh     005bh    0000h      LOCAL    0         _initial_adc (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     005bh     005bh    0000h      LOCAL    0         _wake_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     005bh     005bh    0000h      LOCAL    0         _opa_adc (D:\Downloads\ShuttleByDerek\FUNCTION.OBJ)
-     00h     005bh     0066h    000ch      LOCAL    1.25      _uart_sent (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     005bh     005bh    0000h      LOCAL    0         _halt_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     006dh     006dh    0000h      LOCAL    0         @dummy (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     006dh     006dh    0000h      LOCAL    0         _main (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0061h     0061h    0000h      LOCAL    0         __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0061h     0061h    0001h      LOCAL    2         _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0061h     0061h    0000h      LOCAL    0         _clear_ram (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0061h     0061h    0000h      LOCAL    0         _initial (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0061h     0061h    0000h      LOCAL    0         _opa_offset (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0061h     0061h    0000h      LOCAL    0         _initial_opa (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0061h     0061h    0000h      LOCAL    0         _initial_adc (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0061h     0061h    0000h      LOCAL    0         _wake_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0061h     0061h    0000h      LOCAL    0         _opa_adc (D:\Downloads\ShuttleByDerek\FUNCTION.OBJ)
+     00h     0061h     006ch    000ch      LOCAL    1.25      _uart_sent (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0061h     0061h    0000h      LOCAL    0         _halt_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
 
      Public Symbols Information
      Address            Public by Name
-     0052h              _Flag1
-     004bh              _UART_15
-     004ch              _UART_23
-     004dh              _UART_31
-     004ah              _UART_7
-     020dh              __DELAYX0
-     020ch              __DELAYX1
-     020bh              __DELAYX2
-     020ah              __DELAYX3
-     0209h              __DELAYX4
-     0208h              __DELAYX5
-     0207h              __DELAYX6
-     0216h              __DELAYY0_isr00
-     0215h              __DELAYY1_isr00
-     0214h              __DELAYY2_isr00
-     0213h              __DELAYY3_isr00
-     0212h              __DELAYY4_isr00
-     0211h              __DELAYY5_isr00
-     0046h              _adc_16bit
-     004eh              _adc_32bit
-     0042h              _adc_count
-     0119h              _clear_ram
-     0110h              _halt_set
-     0048h              _i
-     01b7h              _initial
-     010bh              _initial_adc
-     00f2h              _initial_opa
-     007ch              _main
+     0058h              _Flag1
+     0051h              _UART_15
+     0052h              _UART_23
+     0053h              _UART_31
+     0050h              _UART_7
+     023ch              __DELAYX0
+     023bh              __DELAYX1
+     023ah              __DELAYX2
+     0239h              __DELAYX3
+     0238h              __DELAYX4
+     0237h              __DELAYX5
+     0236h              __DELAYX6
+     0245h              __DELAYY0_isr00
+     0244h              __DELAYY1_isr00
+     0243h              __DELAYY2_isr00
+     0242h              __DELAYY3_isr00
+     0241h              __DELAYY4_isr00
+     0240h              __DELAYY5_isr00
+     004ch              _adc_16bit
+     0044h              _adc_16bit_max
+     0054h              _adc_32bit
+     0048h              _adc_count
+     0148h              _clear_ram
+     013fh              _halt_set
+     004eh              _i
+     01e6h              _initial
+     013ah              _initial_adc
+     0121h              _initial_opa
+     008eh              _main
+     0042h              _max_idx
      0040h              _myCounter
-     01e5h              _opa_adc
-     0124h              _opa_offset
-     0044h              _previous_adc
+     0214h              _opa_adc
+     0153h              _opa_offset
+     004ah              _previous_adc
      0002h              _uart_sent
-     0049h              _under_threshold_count
-     0116h              _wake_set
-     0053h              ra
-     0054h              rb
-     0055h              rc
-     0056h              rd
-     0057h              re
-     0058h              rf
-     0059h              rg
-     005ah              rh
+     004fh              _under_threshold_count
+     0046h              _val_count
+     0145h              _wake_set
+     0059h              ra
+     005ah              rb
+     005bh              rc
+     005ch              rd
+     005dh              re
+     005eh              rf
+     005fh              rg
+     0060h              rh
 
      Address            Public by Value
      0002h              _uart_sent
      0040h              _myCounter
-     0042h              _adc_count
-     0044h              _previous_adc
-     0046h              _adc_16bit
-     0048h              _i
-     0049h              _under_threshold_count
-     004ah              _UART_7
-     004bh              _UART_15
-     004ch              _UART_23
-     004dh              _UART_31
-     004eh              _adc_32bit
-     0052h              _Flag1
-     0053h              ra
-     0054h              rb
-     0055h              rc
-     0056h              rd
-     0057h              re
-     0058h              rf
-     0059h              rg
-     005ah              rh
-     007ch              _main
-     00f2h              _initial_opa
-     010bh              _initial_adc
-     0110h              _halt_set
-     0116h              _wake_set
-     0119h              _clear_ram
-     0124h              _opa_offset
-     01b7h              _initial
-     01e5h              _opa_adc
-     0207h              __DELAYX6
-     0208h              __DELAYX5
-     0209h              __DELAYX4
-     020ah              __DELAYX3
-     020bh              __DELAYX2
-     020ch              __DELAYX1
-     020dh              __DELAYX0
-     0211h              __DELAYY5_isr00
-     0212h              __DELAYY4_isr00
-     0213h              __DELAYY3_isr00
-     0214h              __DELAYY2_isr00
-     0215h              __DELAYY1_isr00
-     0216h              __DELAYY0_isr00
+     0042h              _max_idx
+     0044h              _adc_16bit_max
+     0046h              _val_count
+     0048h              _adc_count
+     004ah              _previous_adc
+     004ch              _adc_16bit
+     004eh              _i
+     004fh              _under_threshold_count
+     0050h              _UART_7
+     0051h              _UART_15
+     0052h              _UART_23
+     0053h              _UART_31
+     0054h              _adc_32bit
+     0058h              _Flag1
+     0059h              ra
+     005ah              rb
+     005bh              rc
+     005ch              rd
+     005dh              re
+     005eh              rf
+     005fh              rg
+     0060h              rh
+     008eh              _main
+     0121h              _initial_opa
+     013ah              _initial_adc
+     013fh              _halt_set
+     0145h              _wake_set
+     0148h              _clear_ram
+     0153h              _opa_offset
+     01e6h              _initial
+     0214h              _opa_adc
+     0236h              __DELAYX6
+     0237h              __DELAYX5
+     0238h              __DELAYX4
+     0239h              __DELAYX3
+     023ah              __DELAYX2
+     023bh              __DELAYX1
+     023ch              __DELAYX0
+     0240h              __DELAYY5_isr00
+     0241h              __DELAYY4_isr00
+     0242h              __DELAYY3_isr00
+     0243h              __DELAYY2_isr00
+     0244h              __DELAYY1_isr00
+     0245h              __DELAYY0_isr00
 
 
 ROM Usage Statistics
      Size      Used     Percentage
-     0800h     021fh    26%
+     0800h     024eh    28%
 
 RAM Usage Statistics
     Bank      Size      Used     Percentage
-     00h       0040h     0027h    60%
-     Total     0040h     0027h    60%
+     00h       0040h     002dh    70%
+     Total     0040h     002dh    70%
 
 Use Stack Count
 _main: 2

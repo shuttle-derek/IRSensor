@@ -8,7 +8,7 @@ bit_type Flag1;
 //unsigned char	Uart_L,Uart_H,M_1sec,i;
 unsigned long int adc_32bit;
 unsigned char UART_31, UART_23, UART_15, UART_7, under_threshold_count, i;
-unsigned int adc_16bit, previous_adc, adc_count;
+unsigned int adc_16bit, previous_adc, adc_count, val_count, adc_16bit_max, max_idx;
 unsigned int myCounter;
 ///////////////////////////////////////////////////////////interrupt
 //void __attribute((interrupt(0x10))) stm_p (void)
@@ -49,7 +49,19 @@ void uart_sent(void)
 	while(!_utidle)
 	GCC_CLRWDT();
 	
-	_utxr_rxr=adc_count>>8;
+	_utxr_rxr=adc_16bit_max>>8;
+	while(!_utidle)
+	GCC_CLRWDT();
+	
+	_utxr_rxr=adc_16bit_max&0xff;
+	while(!_utidle)
+	GCC_CLRWDT();
+	
+	_utxr_rxr=max_idx&0xff;
+	while(!_utidle)
+	GCC_CLRWDT();
+	
+	_utxr_rxr=val_count&0xff;//adc_count>>8;
 	while(!_utidle)
 	GCC_CLRWDT();
 
@@ -79,13 +91,16 @@ void main()
 	{	
 		GCC_CLRWDT();
 		
-		if(myCounter>=70)
+		if(myCounter>=125)
 		{
 			
 		rx_control=1;
-		_isgen=1;					//isink output
 		previous_adc=0; // pre adc value
 		adc_32bit=0;
+		val_count=0;
+		adc_16bit_max=0;
+		max_idx=0;
+		_isgen=1;					//isink output
 /*		rx_control=0;*/
 		// Status[0] : count increse curve times , 
 		while(adc_count < adc_duration)
@@ -97,13 +112,18 @@ void main()
 				if (adc_count==0) {
 					previous_adc=adc_16bit;
 					adc_32bit=adc_16bit;
-//					adc_count++;
 //					continue;
 				}
 				else {
 					adc_32bit +=adc_16bit;
 					previous_adc = adc_16bit;
-				}		
+				}
+				if (adc_16bit_max < adc_16bit)
+				{
+					adc_16bit_max = adc_16bit;
+					max_idx = adc_count;
+				}
+				val_count++;
 			}
 			else {
 				if (adc_16bit < previous_adc) {
@@ -117,6 +137,7 @@ void main()
 		_isgen=0;
 		uart_sent();
 		adc_count=0;
+		val_count=0;
 		
 			
 			myCounter = 0;

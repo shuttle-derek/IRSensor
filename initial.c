@@ -4,7 +4,7 @@
 void initial(void)
 {
 	_cks2=0;
-	_cks1=1;
+	_cks1=0;
 	_cks0=0;
 	/////io initial/////
 	_pa=0b00100000;
