@@ -96,8 +96,8 @@ void initial_opa(void)
 	_opdswb=0;
 	_opdswc=0;
 	_opdswd=0;
-	_opdsw26=1;
-	_opdsw3=1;
+	_opdsw26=0;
+	_opdsw3=0;
 	_opdsw4=1;
 	_opdsw27=1;
 	/////opa0/////
