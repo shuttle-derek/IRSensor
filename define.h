@@ -19,8 +19,10 @@
 #define wdt_timeout		0			//0:8ms			1:16ms		2:32ms
 									//3:64ms		4:128ms		5:256ms
 									//6:512ms		7:1024ms
-#define active_threshold	300
-#define adc_duration		200
+#define start_threshold	0
+//#define start_threshold	1000		// about 780 mV (0.78mV/unit)
+//#define end_threshold	300			// about 234 mV (0.78mV/unit)
+#define adc_duration	200			// about 5 ms (one operation needs 50 us)
 ///////////////////////////////////////		FLAG
 typedef struct 
 {

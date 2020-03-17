@@ -71,7 +71,8 @@ void uart_sent(void)
 }
 void main()
 {
-	if(_to==0)						//watch dog timeout flag
+	if(_to==0)	
+					//watch dog timeout flag
 	{
 		while(_hircf==0)			//hirc stable flag
 		GCC_DELAY(100);
@@ -79,7 +80,7 @@ void main()
 		
 		clear_ram();
 		initial();
-		_idata=10;
+		_idata=2;
 		_opda0en=1;					//enable opa
 	}
 	else
@@ -107,7 +108,7 @@ void main()
 		{
 			opa_adc();
 //			uart_sent();
-			if (adc_16bit > active_threshold) {
+			if (adc_16bit > start_threshold) {
 				under_threshold_count=0;
 				if (adc_count==0) {
 					previous_adc=adc_16bit;
@@ -125,7 +126,8 @@ void main()
 				}
 				val_count++;
 			}
-			else {
+			else// if ( adc_16bit < end_threshold )
+			{
 				if (adc_16bit < previous_adc) {
 					if (++under_threshold_count > 5) // continue lower then the adc threshold
 						break;
