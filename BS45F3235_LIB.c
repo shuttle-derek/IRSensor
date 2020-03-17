@@ -80,7 +80,7 @@ void main()
 		
 		clear_ram();
 		initial();
-		_idata=2;
+		_idata=10;
 		_opda0en=1;					//enable opa
 	}
 	else
