@@ -29,7 +29,7 @@ def format_2():
     logData = str(value_max) + " " + str(idx_max) + " " + str(distance)
     print(logData)
     log_to_file(logData + "\n")
-    plt.plot(cnt,distance, label='IR',color='#FF6600', marker='o')
+    plt.plot(cnt,value_max, label='IR',color='#FF6600', marker='o')
 
 input("Press Enter to start.")
 
