@@ -16,155 +16,157 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      00h     0027h     0042h    001ch      CODE               _uart_sent (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
      00h     0043h     0091h    004fh      CODE               _ktbl_init (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
      00h     0092h     0112h    0081h      CODE               _transDist (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0113h     014ch    003ah      CODE               _main (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     014dh     0165h    0019h      CODE               _initial_opa (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0166h     016ah    0005h      CODE               _initial_adc (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     016bh     0170h    0006h      CODE               _halt_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0171h     0173h    0003h      CODE               _wake_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0174h     017eh    000bh      CODE               _clear_ram (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     017fh     0211h    0093h      CODE               _opa_offset (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0212h     023fh    002eh      CODE               _initial (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0240h     0261h    0022h      CODE               _opa_adc (D:\Downloads\ShuttleByDerek\FUNCTION.OBJ)
-     00h     0262h     026bh    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     026ch     0279h    000eh      CODE               _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     027ah     029eh    0025h      CODE               _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     029fh     02a3h    0005h      CODE               _CROM2PROM (CROM2PROM)
-     00h     0040h     0047h    0008h      DATA     3.75      @HCCINIT0 (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0048h     005dh    0016h      DATA     0         @HCCINIT (D:\Downloads\ShuttleByDerek\STARTUP1.OBJ)
-     00h     005eh     005eh    0001h      DATA     41        @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     005fh     005fh    0001h      DATA     36        @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0060h     0060h    0001h      DATA     22        @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0061h     0061h    0001h      DATA     21        @data_rd (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0062h     0062h    0001h      DATA     21        @data_re (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0063h     0063h    0001h      DATA     12        @data_rf (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0064h     0064h    0001h      DATA     12        @data_rg (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0065h     0065h    0001h      DATA     6         @data_rh (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0113h     0156h    0044h      CODE               _main (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0157h     016fh    0019h      CODE               _initial_opa (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0170h     0174h    0005h      CODE               _initial_adc (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0175h     017ah    0006h      CODE               _halt_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     017bh     017dh    0003h      CODE               _wake_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     017eh     0188h    000bh      CODE               _clear_ram (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0189h     021bh    0093h      CODE               _opa_offset (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     021ch     0249h    002eh      CODE               _initial (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     024ah     026bh    0022h      CODE               _opa_adc (D:\Downloads\ShuttleByDerek\FUNCTION.OBJ)
+     00h     026ch     0275h    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0276h     0283h    000eh      CODE               _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0284h     02a8h    0025h      CODE               _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     02a9h     02adh    0005h      CODE               _CROM2PROM (CROM2PROM)
+     00h     0040h     0048h    0009h      DATA     3.6667    @HCCINIT0 (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0049h     005eh    0016h      DATA     0         @HCCINIT (D:\Downloads\ShuttleByDerek\STARTUP1.OBJ)
+     00h     005fh     005fh    0001h      DATA     44        @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0060h     0060h    0001h      DATA     36        @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0061h     0061h    0001h      DATA     22        @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0062h     0062h    0001h      DATA     21        @data_rd (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0063h     0063h    0001h      DATA     21        @data_re (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0064h     0064h    0001h      DATA     12        @data_rf (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0065h     0065h    0001h      DATA     12        @data_rg (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0066h     0066h    0001h      DATA     6         @data_rh (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
 
      Local Sections
 
      Bank    Start     End      Length     Class    AvgIns    Name
-     00h     006eh     006eh    0000h      LOCAL    0         @dummy (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     006eh     006eh    0000h      LOCAL    0         _main (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0066h     0066h    0000h      LOCAL    0         __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0066h     0066h    0001h      LOCAL    2         _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0066h     0066h    0000h      LOCAL    0         _clear_ram (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0066h     0066h    0000h      LOCAL    0         _initial (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0066h     0066h    0000h      LOCAL    0         _opa_offset (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0066h     0066h    0000h      LOCAL    0         _initial_opa (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0066h     0066h    0000h      LOCAL    0         _initial_adc (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0066h     0066h    0000h      LOCAL    0         _wake_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
-     00h     0066h     0067h    0002h      LOCAL    2         _ktbl_init (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0066h     0066h    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
-     00h     0066h     0066h    0000h      LOCAL    0         _opa_adc (D:\Downloads\ShuttleByDerek\FUNCTION.OBJ)
-     00h     006eh     006eh    0000h      LOCAL    0         _transDist (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0066h     006dh    0008h      LOCAL    5.125     _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0066h     0066h    0000h      LOCAL    0         _uart_sent (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
-     00h     0066h     0066h    0000h      LOCAL    0         _halt_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     006fh     006fh    0000h      LOCAL    0         @dummy (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     006fh     006fh    0000h      LOCAL    0         _main (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0067h     0067h    0000h      LOCAL    0         __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0067h     0067h    0001h      LOCAL    2         _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0067h     0067h    0000h      LOCAL    0         _clear_ram (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0067h     0067h    0000h      LOCAL    0         _initial (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0067h     0067h    0000h      LOCAL    0         _opa_offset (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0067h     0067h    0000h      LOCAL    0         _initial_opa (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0067h     0067h    0000h      LOCAL    0         _initial_adc (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0067h     0067h    0000h      LOCAL    0         _wake_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
+     00h     0067h     0068h    0002h      LOCAL    2         _ktbl_init (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0067h     0067h    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
+     00h     0067h     0067h    0000h      LOCAL    0         _opa_adc (D:\Downloads\ShuttleByDerek\FUNCTION.OBJ)
+     00h     006fh     006fh    0000h      LOCAL    0         _transDist (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0067h     006eh    0008h      LOCAL    5.125     _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0067h     0067h    0000h      LOCAL    0         _uart_sent (D:\Downloads\ShuttleByDerek\BS45F3235_LIB.OBJ)
+     00h     0067h     0067h    0000h      LOCAL    0         _halt_set (D:\Downloads\ShuttleByDerek\INITIAL.OBJ)
 
      Public Symbols Information
      Address            Public by Name
-     02a0h              _Crom2Prom
-     029fh              _Crom2PromNext
-     0047h              _Flag1
-     0268h              __DELAYX0
-     0267h              __DELAYX1
-     0266h              __DELAYX2
-     0265h              __DELAYX3
-     0264h              __DELAYX4
-     0263h              __DELAYX5
-     0262h              __DELAYX6
-     0271h              __DELAYY0_isr00
-     0270h              __DELAYY1_isr00
-     026fh              __DELAYY2_isr00
-     026eh              __DELAYY3_isr00
-     026dh              __DELAYY4_isr00
-     026ch              __DELAYY5_isr00
-     0045h              _adc_16bit
-     0041h              _adc_count
-     027ah              _builtin_holtek_udivmodhi4_isr00
-     0068h              _builtin_holtek_udivmodhi4_isr00_2
-     0174h              _clear_ram
-     0042h              _distance
-     016bh              _halt_set
-     0040h              _i
-     0212h              _initial
-     0166h              _initial_adc
-     014dh              _initial_opa
-     0048h              _ktbl
+     02aah              _Crom2Prom
+     02a9h              _Crom2PromNext
+     0048h              _Flag1
+     0272h              __DELAYX0
+     0271h              __DELAYX1
+     0270h              __DELAYX2
+     026fh              __DELAYX3
+     026eh              __DELAYX4
+     026dh              __DELAYX5
+     026ch              __DELAYX6
+     027bh              __DELAYY0_isr00
+     027ah              __DELAYY1_isr00
+     0279h              __DELAYY2_isr00
+     0278h              __DELAYY3_isr00
+     0277h              __DELAYY4_isr00
+     0276h              __DELAYY5_isr00
+     0046h              _adc_16bit
+     0042h              _adc_count
+     0284h              _builtin_holtek_udivmodhi4_isr00
+     0069h              _builtin_holtek_udivmodhi4_isr00_2
+     017eh              _clear_ram
+     0043h              _distance
+     0175h              _halt_set
+     0041h              _i
+     021ch              _initial
+     0170h              _initial_adc
+     0157h              _initial_opa
+     0049h              _ktbl
      0043h              _ktbl_init
      0113h              _main
      0001h              _main_startup
-     0043h              _max_adc
-     0240h              _opa_adc
-     017fh              _opa_offset
+     0044h              _max_adc
+     0040h              _myCounter
+     024ah              _opa_adc
+     0189h              _opa_offset
      0092h              _transDist
      0027h              _uart_sent
-     0171h              _wake_set
-     005eh              ra
-     005fh              rb
-     0060h              rc
-     0061h              rd
-     0062h              re
-     0063h              rf
-     0064h              rg
-     0065h              rh
+     017bh              _wake_set
+     005fh              ra
+     0060h              rb
+     0061h              rc
+     0062h              rd
+     0063h              re
+     0064h              rf
+     0065h              rg
+     0066h              rh
 
      Address            Public by Value
      0001h              _main_startup
      0027h              _uart_sent
-     0040h              _i
-     0041h              _adc_count
-     0042h              _distance
-     0043h              _max_adc
+     0040h              _myCounter
+     0041h              _i
+     0042h              _adc_count
      0043h              _ktbl_init
-     0045h              _adc_16bit
-     0047h              _Flag1
-     0048h              _ktbl
-     005eh              ra
-     005fh              rb
-     0060h              rc
-     0061h              rd
-     0062h              re
-     0063h              rf
-     0064h              rg
-     0065h              rh
-     0068h              _builtin_holtek_udivmodhi4_isr00_2
+     0043h              _distance
+     0044h              _max_adc
+     0046h              _adc_16bit
+     0048h              _Flag1
+     0049h              _ktbl
+     005fh              ra
+     0060h              rb
+     0061h              rc
+     0062h              rd
+     0063h              re
+     0064h              rf
+     0065h              rg
+     0066h              rh
+     0069h              _builtin_holtek_udivmodhi4_isr00_2
      0092h              _transDist
      0113h              _main
-     014dh              _initial_opa
-     0166h              _initial_adc
-     016bh              _halt_set
-     0171h              _wake_set
-     0174h              _clear_ram
-     017fh              _opa_offset
-     0212h              _initial
-     0240h              _opa_adc
-     0262h              __DELAYX6
-     0263h              __DELAYX5
-     0264h              __DELAYX4
-     0265h              __DELAYX3
-     0266h              __DELAYX2
-     0267h              __DELAYX1
-     0268h              __DELAYX0
-     026ch              __DELAYY5_isr00
-     026dh              __DELAYY4_isr00
-     026eh              __DELAYY3_isr00
-     026fh              __DELAYY2_isr00
-     0270h              __DELAYY1_isr00
-     0271h              __DELAYY0_isr00
-     027ah              _builtin_holtek_udivmodhi4_isr00
-     029fh              _Crom2PromNext
-     02a0h              _Crom2Prom
+     0157h              _initial_opa
+     0170h              _initial_adc
+     0175h              _halt_set
+     017bh              _wake_set
+     017eh              _clear_ram
+     0189h              _opa_offset
+     021ch              _initial
+     024ah              _opa_adc
+     026ch              __DELAYX6
+     026dh              __DELAYX5
+     026eh              __DELAYX4
+     026fh              __DELAYX3
+     0270h              __DELAYX2
+     0271h              __DELAYX1
+     0272h              __DELAYX0
+     0276h              __DELAYY5_isr00
+     0277h              __DELAYY4_isr00
+     0278h              __DELAYY3_isr00
+     0279h              __DELAYY2_isr00
+     027ah              __DELAYY1_isr00
+     027bh              __DELAYY0_isr00
+     0284h              _builtin_holtek_udivmodhi4_isr00
+     02a9h              _Crom2PromNext
+     02aah              _Crom2Prom
 
 
 ROM Usage Statistics
      Size      Used     Percentage
-     0800h     02a4h    33%
+     0800h     02aeh    33%
 
 RAM Usage Statistics
     Bank      Size      Used     Percentage
-     00h       0040h     002eh    71%
-     Total     0040h     002eh    71%
+     00h       0040h     002fh    73%
+     Total     0040h     002fh    73%
 
 Use Stack Count
 _main: 2

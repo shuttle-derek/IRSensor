@@ -9,6 +9,7 @@ bit_type Flag1;
 unsigned int adc_16bit, max_adc;
 unsigned int ktbl[11]={3680,1,104,83,39,31,21,15,9,9,19};
 unsigned char distance,adc_count,i;
+unsigned char myCounter;
 
 ///////////////////////////////////////////////////////////interrupt
 //void __attribute((interrupt(0x10))) stm_p (void)
@@ -101,25 +102,31 @@ void main()
 	{	
 		GCC_CLRWDT();
 		
-		rx_control=1;
-		_isgen=1;					//isink output
-		max_adc=0; // pre adc value
-		adc_count=0;
-		i=0;
-//		adc_32bit=0;
-/*		rx_control=0;*/
-		while(i < adc_duration)
+		if(myCounter>=15)
 		{
-			opa_adc();
-			if (adc_16bit > max_adc) {
-				max_adc=adc_16bit;
-				adc_count=i;
+			myCounter=0;
+			rx_control=1;
+			_isgen=1;					//isink output
+			max_adc=0; // pre adc value
+			adc_count=0;
+			i=0;
+	//		adc_32bit=0;
+	/*		rx_control=0;*/
+			while(i < adc_duration)
+			{
+				opa_adc();
+				if (adc_16bit > max_adc) {
+					max_adc=adc_16bit;
+					adc_count=i;
+				}
+				i++;
 			}
-			i++;
+			transDist();
+			uart_sent();
+			_isgen=0;
 		}
-		transDist();
-		uart_sent();
-		_isgen=0;
+		else
+			myCounter++;
 
 		if(halt_sleep)				//halt function(sleep)
 		{
