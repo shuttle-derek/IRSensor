@@ -105,12 +105,12 @@ void initial_opa(void)
 	_opdsw5=1;
 	_opdsw6=1;
 	_opda0ofm=0;
-	_opdsw20=0;
-	_opdsw21=0;
-	_opdsw22=0;
+	_opdsw20=0; // 30K
+	_opdsw21=1; // 60K
+	_opdsw22=1; //120K
 	/////opa1/////
 	_opdsw15=1;
-	_opdsw16=0;
+	_opdsw16=1; //0;
 	_opdsw25=1;
 	_opda1ofm=0;
 		

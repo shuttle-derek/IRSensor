@@ -6,7 +6,11 @@ void opa_adc(void)					//read opda0o
 {
 	unsigned int	buf;
 	initial_adc();
+#ifdef OPAMP2
+	_sadc1=0b10010000;
+#else	
 	_sadc1=0b10000000;
+#endif	
 	_adcen=1;
 	adc_16bit=0;
 // A/D converter start

@@ -16,13 +16,11 @@
 #define opa_R1			1			//0:4K		1:8K
 #define opa_R2			0			//0:1120k	1:960k	2:800k
 									//3:640k	4:480k	5:160k
-#define wdt_timeout		0			//0:8ms			1:16ms		2:32ms
+#define wdt_timeout		2 //0			//0:8ms			1:16ms		2:32ms
 									//3:64ms		4:128ms		5:256ms
 									//6:512ms		7:1024ms
-#define start_threshold	0
-//#define start_threshold	1000		// about 780 mV (0.78mV/unit)
-//#define end_threshold	300			// about 234 mV (0.78mV/unit)
-#define adc_duration	200			// about 5 ms (one operation needs 50 us)
+#define active_threshold	0//0x400
+#define adc_duration		200
 ///////////////////////////////////////		FLAG
 typedef struct 
 {
@@ -51,3 +49,5 @@ extern bit_type Flag1;
 extern volatile unsigned char	m_timer[3];
 extern unsigned int		adc_16bit,ir_bgd,ir_ref,ir_range,Status[10];
 extern unsigned char	adc_mode,led_mode,m_ir_time,m_ir_err,isink;
+
+#define OPAMP2
