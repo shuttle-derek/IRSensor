@@ -4,7 +4,7 @@
 
 bit_type Flag1;
 
-#define DEBUG
+#define DEBUG // Print raw data or distance only
 
 unsigned int adc_16bit, max_adc;
 unsigned int ktbl[11]={3680,1,104,83,39,31,21,15,9,9,19};
@@ -24,10 +24,10 @@ unsigned char myCounter;
 ///////////////////////////////////////////////////////////
 void uart_sent(void)
 {
-#ifdef DEBUG
-
 	_utxen=1;
 	
+#ifdef DEBUG
+
 	_utxr_rxr=(max_adc&0xff00)>>8;
 	while(!_utidle)
 	GCC_CLRWDT();
@@ -86,7 +86,7 @@ void main()
 		
 		clear_ram();
 		initial();
-		_idata=3; //10;
+		_idata=3;
 		_opda0en=1;					//enable opa
 #ifdef OPAMP2		
 		_opda1en=1;					//enable opa
@@ -110,8 +110,7 @@ void main()
 			max_adc=0; // pre adc value
 			adc_count=0;
 			i=0;
-	//		adc_32bit=0;
-	/*		rx_control=0;*/
+
 			while(i < adc_duration)
 			{
 				opa_adc();
