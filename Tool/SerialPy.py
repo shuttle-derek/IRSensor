@@ -46,7 +46,7 @@ global filename
 name = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 filename = "%s.txt" % name
 
-logData = "value " + "value_max " +  "idx_max " + "count_valid " + "count_adc"
+logData = "value_max " +  "idx_max " + "distance"
 print(logData)
 log_to_file(logData + "\n")
 
